@@ -1,0 +1,30 @@
+﻿<ul>
+    <li>Salam</li>
+    <li>aaa</li>
+    <li>xeyr</li>
+    <li>beli</li>
+    <li>sagol</li>
+
+
+</ul>
+
+@for (int i = 1; i < 10; i++)
+{
+    <p> telebe : @i</p>
+}
+
+
+@{
+    List<string> names= new List<string> { "maga", "raiz", "ilkin", "cabbar" };
+}
+
+@{
+    for (int i = 0; i < names.Count; i++)
+    {
+       <ul>
+        <li style="background-color:yellow;">@names[i]</li>
+        
+        </ul>
+        
+    }
+}
